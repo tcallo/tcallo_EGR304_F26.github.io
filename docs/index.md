@@ -16,7 +16,7 @@ for<br>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+This is my individual GitHub site
 
 ### Project Summary
 
