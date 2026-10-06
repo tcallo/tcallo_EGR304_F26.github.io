@@ -26,7 +26,7 @@
 
     
       
-        <title>Individal Block Diagram - Taylor's EGR 304 Data Sheet</title>
+        <title>Block Diagram - Taylor's EGR 304 Data Sheet</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#block-diagram" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Individal Block Diagram
+              Block Diagram
             
           </span>
         </div>
@@ -466,12 +466,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Individal Block Diagram
+    Block Diagram
   </span>
   
 
@@ -482,7 +484,7 @@
         
   
   <span class="md-ellipsis">
-    Individal Block Diagram
+    Block Diagram
   </span>
   
 
@@ -494,6 +496,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -502,18 +506,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#power-supplies" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Power Supplies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+  <a href="#major-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Block Diagram
+      Major Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller-pin-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller Pin Use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ribbon-cable-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ribbon Cable Signals
     </span>
   </a>
   
@@ -792,6 +814,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -800,18 +824,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#power-supplies" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Power Supplies
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+  <a href="#major-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Block Diagram
+      Major Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller-pin-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller Pin Use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ribbon-cable-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ribbon Cable Signals
     </span>
   </a>
   
@@ -840,21 +882,305 @@
   
 
 
-  <h1>Individal Block Diagram</h1>
-
-<h2 id="overview">Overview</h2>
-<p>This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...</p>
-<p>To get some initial formatting help, one can view <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/">"here"</a> some basic techniques.</p>
-<h2 id="example-block-diagram">Example Block Diagram</h2>
-<p>Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../individual-block-diagram.png" data-desc-position="bottom"><img alt="Example of Indivial Block diagram " src="../individual-block-diagram.png"></a></p>
+<h1 id="block-diagram">Block Diagram</h1>
+<p><strong>Team 102 – Project Aurora</strong> · Taylor Callo · Member C: Reminder &amp; Alerts (Hub)</p>
+<p>My board is the hub of our hub-and-spoke system. It keeps the dose schedule with a real-time clock, gives sound and light reminders, and talks to the three sensing boards (Weight, Cap / Lid, Storage Environment) over three 8-pin ribbon cables.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../individual-block-diagram.png" data-desc-position="bottom"><img alt="Taylor Callo block diagram" src="../individual-block-diagram.png"></a></p>
+<p><strong>Figure 1:</strong> Individual block diagram for the Reminder &amp; Alerts hub board. Click the image to enlarge it.</p>
+<h2 id="power-supplies">Power Supplies</h2>
+<table>
+<thead>
+<tr>
+<th>Supply</th>
+<th>Regulated?</th>
+<th>Max current</th>
+<th>Source</th>
+<th>Powers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9 V</td>
+<td>No</td>
+<td>1 A</td>
+<td>9 V wall adapter into a Same Sky PJ-102AH barrel jack</td>
+<td>5 V regulator input</td>
+</tr>
+<tr>
+<td>5 V</td>
+<td>Yes</td>
+<td>1.5 A</td>
+<td>STMicroelectronics L7805CV</td>
+<td>Curiosity Nano, LM386N-1 audio amp, alert LED through the AO3400A MOSFET</td>
+</tr>
+<tr>
+<td>3.3 V</td>
+<td>Yes</td>
+<td>500 mA</td>
+<td>Curiosity Nano on-board regulator</td>
+<td>PIC18F57Q43, real-time clock, buttons, status LEDs, ribbon-cable signals</td>
+</tr>
+</tbody>
+</table>
+<h2 id="major-components">Major Components</h2>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Manufacturer</th>
+<th>Part number</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microcontroller board</td>
+<td>Microchip</td>
+<td>PIC18F57Q43 Curiosity Nano (DM164150)</td>
+<td>Required by the course</td>
+</tr>
+<tr>
+<td>Barrel jack</td>
+<td>Same Sky</td>
+<td>PJ-102AH</td>
+<td>9 V input</td>
+</tr>
+<tr>
+<td>5 V regulator</td>
+<td>STMicroelectronics</td>
+<td>L7805CV</td>
+<td>Linear regulator</td>
+</tr>
+<tr>
+<td>Real-time clock</td>
+<td>Microchip</td>
+<td>MCP7940N-I/P</td>
+<td>I²C, coin-cell backup, alarm output</td>
+</tr>
+<tr>
+<td>Audio amplifier</td>
+<td>Texas Instruments</td>
+<td>LM386N-1</td>
+<td>Non-inverting, gain 20</td>
+</tr>
+<tr>
+<td>Speaker, 8 Ω</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>Driven by the LM386</td>
+</tr>
+<tr>
+<td>N-channel MOSFET</td>
+<td>Alpha &amp; Omega Semiconductor</td>
+<td>AO3400A</td>
+<td>Switches the alert LED</td>
+</tr>
+<tr>
+<td>High-brightness alert LED</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>5 V side, switched by the MOSFET</td>
+</tr>
+<tr>
+<td>Status LEDs (Ready, Taken, Error)</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>Driven from RA3–RA5</td>
+</tr>
+<tr>
+<td>Push buttons (Take Dose, Set / Mode)</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>Inputs on RB0 and RB1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="microcontroller-pin-use">Microcontroller Pin Use</h2>
+<table>
+<thead>
+<tr>
+<th>Pin(s)</th>
+<th>Peripheral</th>
+<th>Connects to</th>
+<th>Signal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RB0</td>
+<td>DI</td>
+<td>Take Dose / Acknowledge button</td>
+<td>Digital - Parallel (3.3 V, 1 pin)</td>
+</tr>
+<tr>
+<td>RB1</td>
+<td>DI</td>
+<td>Set / Mode button</td>
+<td>Digital - Parallel (3.3 V, 1 pin)</td>
+</tr>
+<tr>
+<td>RC3, RC4</td>
+<td>I2C</td>
+<td>Real-time clock (SCL, SDA)</td>
+<td>Digital - Serial (I²C, 2 pins)</td>
+</tr>
+<tr>
+<td>RB2</td>
+<td>DI</td>
+<td>Real-time clock alarm (MFP)</td>
+<td>Digital - Parallel (3.3 V, 1 pin)</td>
+</tr>
+<tr>
+<td>RA3–RA5</td>
+<td>DO</td>
+<td>Status LEDs</td>
+<td>Digital - Parallel (3.3 V, 3 pins)</td>
+</tr>
+<tr>
+<td>RC5</td>
+<td>DO</td>
+<td>AO3400A MOSFET gate</td>
+<td>Digital - Parallel (3.3 V, 1 pin)</td>
+</tr>
+<tr>
+<td>RC2</td>
+<td>PWM</td>
+<td>LM386N-1 input</td>
+<td>Analog (0–3.3 V PWM, 1 pin)</td>
+</tr>
+<tr>
+<td>RD0–RD4, RA0</td>
+<td>DO / DI / ADC</td>
+<td>J1 → Weight board</td>
+<td>Digital - Parallel (3.3 V, 5 pins), Analog (0–3.3 V, 1 pin)</td>
+</tr>
+<tr>
+<td>RD5–RD7, RE0</td>
+<td>DO / DI</td>
+<td>J2 → Cap / Lid board</td>
+<td>Digital - Parallel (3.3 V, 4 pins)</td>
+</tr>
+<tr>
+<td>RE1, RE2, RF2, RA1</td>
+<td>DI / ADC</td>
+<td>J3 → Environment board</td>
+<td>Digital - Parallel (3.3 V, 3 pins), Analog (0–3.3 V, 1 pin)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ribbon-cable-signals">Ribbon Cable Signals</h2>
+<table>
+<thead>
+<tr>
+<th>Cable</th>
+<th style="text-align: center;">Pin</th>
+<th>Signal</th>
+<th>Direction</th>
+<th style="text-align: center;">Hub pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J1 (Weight)</td>
+<td style="text-align: center;">1</td>
+<td>DOSE_READY</td>
+<td>Hub → Weight</td>
+<td style="text-align: center;">RD0</td>
+</tr>
+<tr>
+<td>J1 (Weight)</td>
+<td style="text-align: center;">2</td>
+<td>DOSE_REMOVED</td>
+<td>Weight → Hub</td>
+<td style="text-align: center;">RD1</td>
+</tr>
+<tr>
+<td>J1 (Weight)</td>
+<td style="text-align: center;">3</td>
+<td>WEIGHT_FAULT</td>
+<td>Weight → Hub</td>
+<td style="text-align: center;">RD2</td>
+</tr>
+<tr>
+<td>J1 (Weight)</td>
+<td style="text-align: center;">4</td>
+<td>TARE_REQ</td>
+<td>Hub → Weight</td>
+<td style="text-align: center;">RD3</td>
+</tr>
+<tr>
+<td>J1 (Weight)</td>
+<td style="text-align: center;">5</td>
+<td>HEARTBEAT_A</td>
+<td>Weight → Hub</td>
+<td style="text-align: center;">RD4</td>
+</tr>
+<tr>
+<td>J1 (Weight)</td>
+<td style="text-align: center;">6</td>
+<td>WEIGHT_LEVEL</td>
+<td>Weight → Hub</td>
+<td style="text-align: center;">RA0</td>
+</tr>
+<tr>
+<td>J2 (Cap / Lid)</td>
+<td style="text-align: center;">1</td>
+<td>DOSE_READY</td>
+<td>Hub → Cap</td>
+<td style="text-align: center;">RD5</td>
+</tr>
+<tr>
+<td>J2 (Cap / Lid)</td>
+<td style="text-align: center;">2</td>
+<td>LID_OPEN</td>
+<td>Cap → Hub</td>
+<td style="text-align: center;">RD6</td>
+</tr>
+<tr>
+<td>J2 (Cap / Lid)</td>
+<td style="text-align: center;">3</td>
+<td>LID_FAULT</td>
+<td>Cap → Hub</td>
+<td style="text-align: center;">RD7</td>
+</tr>
+<tr>
+<td>J2 (Cap / Lid)</td>
+<td style="text-align: center;">5</td>
+<td>HEARTBEAT_B</td>
+<td>Cap → Hub</td>
+<td style="text-align: center;">RE0</td>
+</tr>
+<tr>
+<td>J3 (Environment)</td>
+<td style="text-align: center;">2</td>
+<td>TEMP_ALERT</td>
+<td>Env. → Hub</td>
+<td style="text-align: center;">RE1</td>
+</tr>
+<tr>
+<td>J3 (Environment)</td>
+<td style="text-align: center;">3</td>
+<td>LIGHT_ALERT</td>
+<td>Env. → Hub</td>
+<td style="text-align: center;">RE2</td>
+</tr>
+<tr>
+<td>J3 (Environment)</td>
+<td style="text-align: center;">5</td>
+<td>HEARTBEAT_D</td>
+<td>Env. → Hub</td>
+<td style="text-align: center;">RF2</td>
+</tr>
+<tr>
+<td>J3 (Environment)</td>
+<td style="text-align: center;">6</td>
+<td>TEMP_LEVEL</td>
+<td>Env. → Hub</td>
+<td style="text-align: center;">RA1</td>
+</tr>
+</tbody>
+</table>
+<p>Pin 8 on every cable is ground, and unused pins are spare. The full cable tables are on our <a href="https://asu-egr304-2026-f-102.github.io/06-team-block-diagram/">team block diagram page</a>.</p>
 
 
 
