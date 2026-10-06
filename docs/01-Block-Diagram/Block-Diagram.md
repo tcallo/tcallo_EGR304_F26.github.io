@@ -6,7 +6,7 @@ title: Block Diagram
 
 **Team 102 – Project Aurora** · Taylor Callo · Member C: Reminder & Alerts (Hub)
 
-My board is the hub of our hub-and-spoke system. It keeps the dose schedule with a real-time clock, gives sound and light reminders, and talks to the three sensing boards (Weight, Cap / Lid, Storage Environment) over three 8-pin ribbon cables.
+My board is the hub of our system. It keeps the dose schedule with a real-time clock, gives sound and light reminders, and talks to the three sensing boards (Weight, Cap / Lid, Storage Environment) over three 8-pin ribbon cables.
 
 ![Taylor Callo block diagram](individual-block-diagram.png)
 
