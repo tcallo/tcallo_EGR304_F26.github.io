@@ -281,7 +281,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../04-Schematic/schematic/" class="md-tabs__link">
+        <a href="../../04-Schematic/Schematic/" class="md-tabs__link">
           
   
     
@@ -714,6 +714,8 @@
       
         
       
+        
+      
     
     
       
@@ -730,7 +732,7 @@
         
   
   
-    <a href="../../04-Schematic/schematic/" class="md-nav__link">
+    <a href="../../04-Schematic/Schematic/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -1068,17 +1070,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6222/296%7E4040082%7EP%7E8.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6222/296%7E4040082%7EP%7E8.jpg" width="200"></a><br><strong>Option 1.</strong> Texas Instruments LM386N-1/NOPB (DIP-8)<br>$1.18/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM386N-1-NOPB/6284">LM386N-1 at DigiKey</a></td>
+<td><br><strong>Option 1.</strong> Texas Instruments LM386N-1/NOPB (DIP-8)<br>$1.18/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM386N-1-NOPB/6284">LM386N-1 at DigiKey</a></td>
 <td>• Its pins go through the board (DIP-8), so it is easy to solder by hand on the milled board<br>• Works on anything from 4 V to 12 V, so it can plug right into my 5 V rail<br>• The gain (how much it boosts the signal) is already set to 20 inside the chip, so I only need a few extra parts<br>• It is a very popular chip, so there are lots of example circuits and help online</td>
 <td>• Needs a big (about 250 µF) capacitor between the chip and the speaker, which takes up board space<br>• Only puts out about 0.25 W at 5 V, which is loud enough for a reminder beep but not very loud<br>• Uses 4–8 mA of power even when it is not making any sound</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/376/8-DIP.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/376/8-DIP.jpg" width="200"></a><br><strong>Option 2.</strong> Nisshinbo NJM2113D (DIP-8)<br>$0.96/each<br><a href="https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM2113D/805551">NJM2113D at DigiKey</a></td>
+<td><br><strong>Option 2.</strong> Nisshinbo NJM2113D (DIP-8)<br>$0.96/each<br><a href="https://www.digikey.com/en/products/detail/nisshinbo-micro-devices-inc/NJM2113D/805551">NJM2113D at DigiKey</a></td>
 <td>• Its pins go through the board and it is the cheapest of the three<br>• Drives the speaker from both sides, so it does not need the big output capacitor<br>• Has a mute pin the PIC can use to turn it almost fully off between alerts, saving power</td>
 <td>• The datasheet does not say how much power it can give an 8 Ω speaker (it is rated for 32 Ω), so I can't be sure it will be loud enough<br>• Neither speaker wire can go to ground, because of the way it drives the speaker<br>• There are far fewer examples online than for the LM386</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/5734/31%7E8SOP-3.9%7EE%2CS%7E8.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/5734/31%7E8SOP-3.9%7EE%2CS%7E8.jpg" width="200"></a><br><strong>Option 3.</strong> Diodes Inc. PAM8302AADCR (SOIC-8, class-D)<br>$0.67/each<br><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/PAM8302AADCR/4033280">PAM8302AADCR at DigiKey</a></td>
+<td><br><strong>Option 3.</strong> Diodes Inc. PAM8302AADCR (SOIC-8, class-D)<br>$0.67/each<br><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/PAM8302AADCR/4033280">PAM8302AADCR at DigiKey</a></td>
 <td>• By far the loudest option, up to 2.5 W from 5 V<br>• Very efficient (up to 88%), so it barely gets warm<br>• Has a built-in off switch plus protection if the speaker wires short or it gets too hot</td>
 <td>• Surface-mount only (the chip sits on top of the board), which is harder to solder on a milled board<br>• The way it switches on and off very fast can add electrical noise near the sensor signals coming from the other boards<br>• Neither speaker wire can go to ground</td>
 </tr>
@@ -1099,17 +1101,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2109/CMS-40558N-L152.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2109/CMS-40558N-L152.jpg" width="200"></a><br><strong>Option 1.</strong> Same Sky CMS-40558N-L152 (40 mm, 8 Ω)<br>$5.88/each<br><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-40558N-L152/6137744">CMS-40558N-L152 at DigiKey</a></td>
+<td><br><strong>Option 1.</strong> Same Sky CMS-40558N-L152 (40 mm, 8 Ω)<br>$5.88/each<br><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-40558N-L152/6137744">CMS-40558N-L152 at DigiKey</a></td>
 <td>• Rated for 0.5 W (1 W max), which is double what the amplifier can send, so it won't get damaged<br>• Very loud for its size (90 dB), so the beep is easy to hear even at low power<br>• Comes with wires already attached, so it can plug into a header on my board<br>• Thin (5.5 mm) and in stock at DigiKey</td>
 <td>• At 40 mm across, it is the biggest of the three options<br>• Not good at low sounds (below about 500 Hz), so the beep needs to be a higher pitch</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/17/MFG_AS02808MR-LW152-R.JPG" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/17/MFG_AS02808MR-LW152-R.JPG" width="200"></a><br><strong>Option 2.</strong> PUI Audio AS02808MR-LW152-R (28 mm, 8 Ω)<br>$4.82/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/pui-audio-inc/AS02808MR-LW152-R/4835129">AS02808MR-LW152-R at DigiKey</a></td>
+<td><br><strong>Option 2.</strong> PUI Audio AS02808MR-LW152-R (28 mm, 8 Ω)<br>$4.82/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/pui-audio-inc/AS02808MR-LW152-R/4835129">AS02808MR-LW152-R at DigiKey</a></td>
 <td>• Smaller (28 mm), so it is easier to fit inside the medication holder<br>• Rated for 1 W and very loud (95 dB)<br>• Comes with wires already attached</td>
 <td>• I couldn't confirm DigiKey has it in stock, so I might have to order it from Mouser separately<br>• A smaller speaker sounds thinner and less full</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/327/K-28-WPC-BL---8-OHM-VIEW-A.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/327/K-28-WPC-BL---8-OHM-VIEW-A.jpg" width="200"></a><br><strong>Option 3.</strong> Visaton K 28 WPC BL (28 mm, 8 Ω)<br>$7.24/each<br><a href="https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/K-28-WPC-BL-8-OHM/9842354">K 28 WPC BL at DigiKey</a></td>
+<td><br><strong>Option 3.</strong> Visaton K 28 WPC BL (28 mm, 8 Ω)<br>$7.24/each<br><a href="https://www.digikey.com/en/products/detail/visaton-gmbh-co-kg/K-28-WPC-BL-8-OHM/9842354">K 28 WPC BL at DigiKey</a></td>
 <td>• Handles the most power (1 W rated, 2 W max), so there is lots of room for error<br>• Has mounting tabs, so it is easy to screw into the enclosure<br>• Good-quality brand that plays a wide range of sounds (300 Hz–20 kHz)</td>
 <td>• The most expensive of the three<br>• Only has solder tabs, so I would have to solder wires onto it myself</td>
 </tr>
@@ -1130,17 +1132,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/8882/MFG_150%7EC04-018%7EP%2CPA%7E8.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/8882/MFG_150%7EC04-018%7EP%2CPA%7E8.jpg" width="200"></a><br><strong>Option 1.</strong> Microchip MCP7940N-I/P (DIP-8)<br>$0.92/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP7940N-I-P/3872279">MCP7940N-I/P at DigiKey</a></td>
+<td><br><strong>Option 1.</strong> Microchip MCP7940N-I/P (DIP-8)<br>$0.92/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP7940N-I-P/3872279">MCP7940N-I/P at DigiKey</a></td>
 <td>• Works on 1.8–5.5 V, so it runs fine on the PIC's 3.3 V<br>• Its pins go through the board, so it is easy to solder<br>• Has two built-in alarms and an alarm pin to tell the PIC when a dose is due<br>• Cheapest option, and only uses 1.2 µA from the backup battery</td>
 <td>• Needs a separate 32.768 kHz crystal and two small capacitors to keep time<br>• Only as accurate as the crystal (can drift about 1 minute per month unless adjusted)<br>• The code has to turn on its clock and its battery backup at startup</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6285/175%7E21-0043%7EN%2CPA%7E8.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6285/175%7E21-0043%7EN%2CPA%7E8.jpg" width="200"></a><br><strong>Option 2.</strong> Analog Devices DS1307+ (DIP-8)<br>$6.94/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/DS1307/956883">DS1307+ at DigiKey</a></td>
+<td><br><strong>Option 2.</strong> Analog Devices DS1307+ (DIP-8)<br>$6.94/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/DS1307/956883">DS1307+ at DigiKey</a></td>
 <td>• Its pins go through the board<br>• Very well known, with lots of example code<br>• Uses very little power from the backup battery</td>
 <td>• Only runs on 5 V, so I would have to be careful connecting it to the 3.3 V PIC<br>• Has no alarms, so the PIC would have to keep checking the time over and over<br>• Slower communication, also needs a crystal, and costs about 7× more</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/7348/MFG_175%7E21-0042%7EWE%7E16.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/7348/MFG_175%7E21-0042%7EWE%7E16.jpg" width="200"></a><br><strong>Option 3.</strong> Analog Devices DS3231SN# (SOIC-16)<br>$19.05/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/DS3231SN/1197576">DS3231SN# at DigiKey</a></td>
+<td><br><strong>Option 3.</strong> Analog Devices DS3231SN# (SOIC-16)<br>$19.05/each<br><a href="https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/DS3231SN/1197576">DS3231SN# at DigiKey</a></td>
 <td>• Extremely accurate (drifts about 1 minute per year)<br>• Crystal is built in, so there is nothing extra to wire up<br>• Has two alarms and works at 3.3 V</td>
 <td>• Costs about 20× more than the MCP7940N<br>• Surface-mount only<br>• Much more accurate than a pill reminder needs</td>
 </tr>
@@ -1161,17 +1163,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/4849/11_CR2032.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/4849/11_CR2032.jpg" width="200"></a><br><strong>Option 1.</strong> Panasonic CR2032 (3 V, 225 mAh)<br>$0.36/each (holder: 1.12 USD) <br><a href="https://www.digikey.com/en/products/detail/panasonic-energy/CR2032/31939">CR2032 at DigiKey</a> · <a href="https://www.digikey.com/en/products/detail/keystone-electronics/1066/303562">Keystone 1066 holder</a></td>
+<td><br><strong>Option 1.</strong> Panasonic CR2032 (3 V, 225 mAh)<br>$0.36/each (holder: 1.12 USD) <br><a href="https://www.digikey.com/en/products/detail/panasonic-energy/CR2032/31939">CR2032 at DigiKey</a> · <a href="https://www.digikey.com/en/products/detail/keystone-electronics/1066/303562">Keystone 1066 holder</a></td>
 <td>• 225 mAh lasts for decades at the clock's tiny 1.2 µA draw<br>• Cheapest, and sold almost everywhere, so a user can easily replace it<br>• Has a through-hole holder that fits my milled board</td>
 <td>• The 20 mm holder takes up some board space<br>• Not rechargeable</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.mouser.com/images/renata/images/CR_2032_prv_SPL.jpg" data-desc-position="bottom"><img src="https://www.mouser.com/images/renata/images/CR_2032_prv_SPL.jpg" width="200"></a><br><strong>Option 2.</strong> Renata CR2032 MFR.IB (3 V, 225 mAh)<br>$0.44/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/614-CR2032-200">Renata CR2032 at Mouser</a></td>
+<td><br><strong>Option 2.</strong> Renata CR2032 MFR.IB (3 V, 225 mAh)<br>$0.44/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/614-CR2032-200">Renata CR2032 at Mouser</a></td>
 <td>• Same size and capacity as Option 1<br>• Loses less than 1% of its charge per year while sitting<br>• Well-documented Swiss brand</td>
 <td>• Costs a little more<br>• I could only confirm it at Mouser, not DigiKey</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.mouser.com/images/panasonic/images/CR1220_SPL.jpg" data-desc-position="bottom"><img src="https://www.mouser.com/images/panasonic/images/CR1220_SPL.jpg" width="200"></a><br><strong>Option 3.</strong> Panasonic CR1220 (3 V, 35 mAh)<br>$1.02/each (Mouser) (holder: 1.22 USD) <br><a href="https://www.mouser.com/ProductDetail/658-CR1220">CR1220 at Mouser</a></td>
+<td><br><strong>Option 3.</strong> Panasonic CR1220 (3 V, 35 mAh)<br>$1.02/each (Mouser) (holder: 1.22 USD) <br><a href="https://www.mouser.com/ProductDetail/658-CR1220">CR1220 at Mouser</a></td>
 <td>• Small (12 mm), so the battery and holder save board space<br>• 35 mAh still lasts years at 1.2 µA</td>
 <td>• Only about 1/6 the capacity of a CR2032<br>• Costs about 3× more<br>• Harder for a user to find a replacement</td>
 </tr>
@@ -1192,17 +1194,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6348/785%7EPO-00001%7E%7E3.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6348/785%7EPO-00001%7E%7E3.jpg" width="200"></a><br><strong>Option 1.</strong> Alpha &amp; Omega AO3400A (SOT-23)<br>$0.52/each<br><a href="https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AO3400A/1855772">AO3400A at DigiKey</a></td>
+<td><br><strong>Option 1.</strong> Alpha &amp; Omega AO3400A (SOT-23)<br>$0.52/each<br><a href="https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AO3400A/1855772">AO3400A at DigiKey</a></td>
 <td>• The datasheet guarantees it turns fully on with only 2.5 V, so the PIC's 3.3 V is plenty<br>• Can handle up to 5.7 A, so I could switch to a much brighter LED later<br>• The cheapest of the three</td>
 <td>• The small 3-pin package takes some care to solder by hand<br>• Fake copies with the same name exist, so I need to buy it from DigiKey</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6157/488%7EMKT-ZA03D%7E%7E3.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6157/488%7EMKT-ZA03D%7E%7E3.jpg" width="200"></a><br><strong>Option 2.</strong> onsemi 2N7000 (TO-92)<br>$1.23/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/onsemi/2N7000/244278">2N7000 at DigiKey</a></td>
+<td><br><strong>Option 2.</strong> onsemi 2N7000 (TO-92)<br>$1.23/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/onsemi/2N7000/244278">2N7000 at DigiKey</a></td>
 <td>• Its pins go through the board, so it is the easiest to solder<br>• Very common and well-known part</td>
 <td>• Might need up to 3 V just to start turning on, so it may barely work from the PIC's 3.3 V<br>• Can only handle 200 mA<br>• Leaves no room to upgrade to a brighter LED</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/7182/TO-220AB%2CTO-220-3%2CHEXFET%C2%AE.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/7182/TO-220AB%2CTO-220-3%2CHEXFET%C2%AE.jpg" width="200"></a><br><strong>Option 3.</strong> Infineon IRLZ44NPBF (TO-220)<br>$1.80/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/infineon-technologies/IRLZ44NPBF/811808">IRLZ44NPBF at DigiKey</a></td>
+<td><br><strong>Option 3.</strong> Infineon IRLZ44NPBF (TO-220)<br>$1.80/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/infineon-technologies/IRLZ44NPBF/811808">IRLZ44NPBF at DigiKey</a></td>
 <td>• Its pins go through the board, so it is easy to solder<br>• Turns on at a low voltage (1–2 V) and wastes very little power when on</td>
 <td>• The datasheet only guarantees full performance at 4 V or more, not at 3.3 V<br>• Big package for such a small LED<br>• The most expensive of the three</td>
 </tr>
@@ -1223,17 +1225,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/637/WP7113SEC%5EJ3.JPG" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/637/WP7113SEC%5EJ3.JPG" width="200"></a><br><strong>Option 1.</strong> Kingbright WP7113SEC/J3 (5 mm red)<br>$0.76/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/kingbright/WP7113SEC-J3/2075399">WP7113SEC/J3 at DigiKey</a></td>
+<td><br><strong>Option 1.</strong> Kingbright WP7113SEC/J3 (5 mm red)<br>$0.76/each (Mouser)<br><a href="https://www.digikey.com/en/products/detail/kingbright/WP7113SEC-J3/2075399">WP7113SEC/J3 at DigiKey</a></td>
 <td>• Very bright: 15,000 mcd at 20 mA<br>• Red clearly means "pay attention"<br>• Its pins go through the board and it only needs one resistor (about 150 Ω) to run on 5 V<br>• Only uses 20 mA, which keeps the power budget small</td>
 <td>• The light shines in a narrow 20° beam, so it is easiest to see from the front<br>• Can't be made much brighter (30 mA max)</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/534/C512A-WNN-CZ0B0151.JPG" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/534/C512A-WNN-CZ0B0151.JPG" width="200"></a><br><strong>Option 2.</strong> Cree C503B-WAN-CBBDB231 (5 mm white)<br>$0.28/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/941-C503BWANCBBDB231">C503B-WAN at Mouser</a></td>
+<td><br><strong>Option 2.</strong> Cree C503B-WAN-CBBDB231 (5 mm white)<br>$0.28/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/941-C503BWANCBBDB231">C503B-WAN at Mouser</a></td>
 <td>• The brightest 5 mm option: 20,000–34,000 mcd at 20 mA<br>• The cheapest option<br>• Its pins go through the board</td>
 <td>• Very narrow 15° beam, so it is hard to see from the side<br>• White light doesn't say "alert" as clearly as red<br>• Only 25 mA max</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/3964/MFG_XPGDRY-L1-0000-00601-SB01.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/3964/MFG_XPGDRY-L1-0000-00601-SB01.jpg" width="200"></a><br><strong>Option 3.</strong> Cree XLamp XP-G3 star LED (white)<br>$11.40/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/416-XPGDWT01LE1B1">XP-G3 star LED at Mouser</a></td>
+<td><br><strong>Option 3.</strong> Cree XLamp XP-G3 star LED (white)<br>$11.40/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/416-XPGDWT01LE1B1">XP-G3 star LED at Mouser</a></td>
 <td>• Extremely bright (about 165 lumens) with a wide 125° beam<br>• Can be seen from anywhere in the room</td>
 <td>• Needs 350 mA, which would add about 1.75 W of heat to my 5 V regulator<br>• Mounted on a metal star board, so it has to be wired by hand and needs a heatsink<br>• Costs about 15× more than a 5 mm LED</td>
 </tr>
@@ -1254,17 +1256,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2660/497%7ETO220-3TO220AB%7E%7E3.JPG" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2660/497%7ETO220-3TO220AB%7E%7E3.JPG" width="200"></a><br><strong>Option 1.</strong> STMicroelectronics L7805CV (TO-220)<br>$0.50/each<br><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964">L7805CV at DigiKey</a></td>
+<td><br><strong>Option 1.</strong> STMicroelectronics L7805CV (TO-220)<br>$0.50/each<br><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964">L7805CV at DigiKey</a></td>
 <td>• It is a linear regulator, so it meets the course rule<br>• Can supply up to 1.5 A, about 3× the most my board needs<br>• Works with small, cheap capacitors (0.33 µF in, 0.1 µF out)<br>• The cheapest option, with built-in protection if it overheats or shorts</td>
 <td>• Needs at least 7 V coming in (my 9 V adapter is fine)<br>• Turns the extra 4 V into heat, so it needs a heatsink when everything is on</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/3642/296%7ET03B%7ENDE%7E3.JPG" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/3642/296%7ET03B%7ENDE%7E3.JPG" width="200"></a><br><strong>Option 2.</strong> Texas Instruments LM2940CT-5.0/NOPB (TO-220)<br>$1.94/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2940CT-5-0-NOPB/32575">LM2940CT-5.0 at DigiKey</a></td>
+<td><br><strong>Option 2.</strong> Texas Instruments LM2940CT-5.0/NOPB (TO-220)<br>$1.94/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2940CT-5-0-NOPB/32575">LM2940CT-5.0 at DigiKey</a></td>
 <td>• Keeps working even if the input drops to about 5.5 V<br>• Protected if the power is hooked up backwards<br>• It is a linear regulator, so it meets the course rule</td>
 <td>• Needs a large output capacitor of a specific type, or it can become unstable<br>• Makes the same amount of heat as the 7805, because the heat depends on 9 V − 5 V<br>• Uses more power itself and costs about 4× more</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2584/MFG_R-78-e%20series.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2584/MFG_R-78-e%20series.jpg" width="200"></a><br><strong>Option 3.</strong> RECOM R-78E5.0-1.0 (switching)<br>$3.97/each<br><a href="https://www.digikey.com/en/products/detail/recom-power/R-78E5-0-1-0/4930585">R-78E5.0-1.0 at DigiKey</a></td>
+<td><br><strong>Option 3.</strong> RECOM R-78E5.0-1.0 (switching)<br>$3.97/each<br><a href="https://www.digikey.com/en/products/detail/recom-power/R-78E5-0-1-0/4930585">R-78E5.0-1.0 at DigiKey</a></td>
 <td>• About 92% efficient, so it barely gets warm and needs no heatsink<br>• Same pin layout as a 7805, so it can drop right in</td>
 <td>• It is a switching regulator, not linear, so it does not meet the course rule<br>• Adds a small ripple to the output that could add noise to sensor readings<br>• Costs about 8× more</td>
 </tr>
@@ -1285,17 +1287,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/1875/MFG_WSU-Series.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/1875/MFG_WSU-Series.jpg" width="200"></a><br><strong>Option 1.</strong> Triad Magnetics WSU090-2000 (9 V, 2 A)<br>$12.43/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/553-WSU090-2000">WSU090-2000 at Mouser</a></td>
+<td><br><strong>Option 1.</strong> Triad Magnetics WSU090-2000 (9 V, 2 A)<br>$12.43/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/553-WSU090-2000">WSU090-2000 at Mouser</a></td>
 <td>• Supplies 2 A, about 4× the most my board needs<br>• Plugs straight into the wall<br>• Has the right size plug with positive in the center<br>• The cheapest of the three</td>
 <td>• Not many in stock, and more take a long time to arrive<br>• A very similar "-R" version has the polarity flipped, so I have to make sure not to order that one</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2158/MFG_GST18A.jpg" data-desc-position="bottom"><img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2158/MFG_GST18A.jpg" width="200"></a><br><strong>Option 2.</strong> MEAN WELL GST18A09-P1J (9 V, 2 A)<br>$14.10/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/709-GST18A09-P1J">GST18A09-P1J at Mouser</a></td>
+<td><br><strong>Option 2.</strong> MEAN WELL GST18A09-P1J (9 V, 2 A)<br>$14.10/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/709-GST18A09-P1J">GST18A09-P1J at Mouser</a></td>
 <td>• High-quality brand with a 2 A output<br>• Has the right size plug with positive in the center</td>
 <td>• It is a desktop power brick, not a wall plug, so it needs a separate AC cord<br>• Low stock at both Mouser and DigiKey</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.mouser.com/images/cuiinc/images/swi12-12-n-p6_SPL.jpg" data-desc-position="bottom"><img src="https://www.mouser.com/images/cuiinc/images/swi12-12-n-p6_SPL.jpg" width="200"></a><br><strong>Option 3.</strong> CUI SWI12-9-N-P5 (9 V, 1.2 A)<br>$17.59/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/490-SWI12-9-N-P5">SWI12-9-N-P5 at Mouser</a></td>
+<td><br><strong>Option 3.</strong> CUI SWI12-9-N-P5 (9 V, 1.2 A)<br>$17.59/each (Mouser)<br><a href="https://www.mouser.com/ProductDetail/490-SWI12-9-N-P5">SWI12-9-N-P5 at Mouser</a></td>
 <td>• Lots in stock (800+)<br>• Plugs into the wall and has the right plug</td>
 <td>• The most expensive<br>• Supplies the least current (1.2 A), the least room for error</td>
 </tr>
