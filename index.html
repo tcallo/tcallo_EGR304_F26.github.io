@@ -863,10 +863,25 @@
 <h3 id="project-summary">Project Summary</h3>
 <p>Project Aurora helps a user take their medication on time. Four connected boards share the job: a weight board detects when a dose is removed, a cap board detects when the bottle is opened, an environment board watches storage temperature and light, and a hub board keeps the schedule and gives reminders. The boards talk to each other over 8-pin ribbon cables. See the <a href="https://asu-egr304-2026-f-102.github.io/">team website</a> for the full system.</p>
 <h3 id="my-contribution">My Contribution</h3>
-<p>I am designing the <strong>Reminder &amp; Alerts hub board (Member C)</strong>. It keeps the dose schedule with a real-time clock, alerts the user with a speaker and a high-brightness LED, shows status on three LEDs, and connects to the three sensing boards.</p>
+<p>I am designing the <strong>Reminder &amp; Alerts hub board (Member C)</strong>. My main subsystem is the <strong>audio alert</strong>: an LM386 audio amplifier that drives a speaker to remind the user when a dose is due. The hub also has a high-brightness alert LED, three status LEDs, user buttons, and connects to the three sensing boards. A battery-backed <strong>real-time clock (MCP7940N)</strong> that keeps the dose schedule is a <strong>stretch goal</strong>.</p>
 <p><strong>Datasheet sections:</strong></p>
 <ul>
 <li><a href="01-Block-Diagram/Block-Diagram/">Block Diagram</a>: how my board is laid out, its power supplies, parts, and microcontroller pin use</li>
+<li><a href="02-Component-Selection/Component-Selection/">Component Selection</a>: three options compared for each major part, and my choices<ul>
+<li><a href="02-Component-Selection/Component-Selection/#decision-making-process">Decision-Making Process</a></li>
+<li><a href="02-Component-Selection/Component-Selection/#how-my-parts-meet-the-product-requirements">How My Parts Meet the Product Requirements</a></li>
+<li><a href="02-Component-Selection/Component-Selection/#mcc-configuration-pic18f57q43-pins-and-peripherals">MCC Configuration</a></li>
+</ul>
+</li>
+<li><a href="04-Schematic/Schematic/">Schematic</a>: the full hub schematic with PDF and KiCad downloads<ul>
+<li><a href="04-Schematic/Schematic/#how-the-schematic-works">How the Schematic Works</a></li>
+<li><a href="04-Schematic/Schematic/#how-it-meets-user-needs-and-product-requirements">How It Meets User Needs and Product Requirements</a></li>
+</ul>
+</li>
+<li><a href="05-Power-Budget/Power-Budget/">Power Budget</a>: current needed on each power rail, and regulator and adapter checks<ul>
+<li><a href="05-Power-Budget/Power-Budget/#what-the-power-budget-told-me">What the Power Budget Told Me</a></li>
+</ul>
+</li>
 </ul>
 
 
