@@ -29,8 +29,17 @@ Project Aurora helps a user take their medication on time. Four connected boards
 
 ### My Contribution
 
-I am designing the **Reminder & Alerts hub board (Member C)**. It keeps the dose schedule with a real-time clock, alerts the user with a speaker and a high-brightness LED, shows status on three LEDs, and connects to the three sensing boards.
+I am designing the **Reminder & Alerts hub board (Member C)**. My main subsystem is the **audio alert**: an LM386 audio amplifier that drives a speaker to remind the user when a dose is due. The hub also has a high-brightness alert LED, three status LEDs, user buttons, and connects to the three sensing boards. A battery-backed **real-time clock (MCP7940N)** that keeps the dose schedule is a **stretch goal**.
 
 **Datasheet sections:**
 
 - [Block Diagram](01-Block-Diagram/Block-Diagram.md): how my board is laid out, its power supplies, parts, and microcontroller pin use
+- [Component Selection](02-Component-Selection/Component-Selection.md): three options compared for each major part, and my choices
+    - [Decision-Making Process](02-Component-Selection/Component-Selection.md#decision-making-process)
+    - [How My Parts Meet the Product Requirements](02-Component-Selection/Component-Selection.md#how-my-parts-meet-the-product-requirements)
+    - [MCC Configuration](02-Component-Selection/Component-Selection.md#mcc-configuration-pic18f57q43-pins-and-peripherals)
+- [Schematic](04-Schematic/Schematic.md): the full hub schematic with PDF and KiCad downloads
+    - [How the Schematic Works](04-Schematic/Schematic.md#how-the-schematic-works)
+    - [How It Meets User Needs and Product Requirements](04-Schematic/Schematic.md#how-it-meets-user-needs-and-product-requirements)
+- [Power Budget](05-Power-Budget/Power-Budget.md): current needed on each power rail, and regulator and adapter checks
+    - [What the Power Budget Told Me](05-Power-Budget/Power-Budget.md#what-the-power-budget-told-me)
