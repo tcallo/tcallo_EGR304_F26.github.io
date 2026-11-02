@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#bill-of-materials" class="md-skip">
           Skip to content
         </a>
       
@@ -558,6 +558,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -586,6 +588,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -594,27 +598,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#bom-table" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      BOM Table
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Table)
+      Summary
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
+  <a href="#notes" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Image)
+      Notes
     </span>
   </a>
   
@@ -801,6 +805,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -809,27 +815,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#bom-table" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      BOM Table
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Table)
+      Summary
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
+  <a href="#notes" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Image)
+      Notes
     </span>
   </a>
   
@@ -858,68 +864,535 @@
   
 
 
-  <h1>Bill of Materials</h1>
-
-<h2 id="overview">Overview</h2>
-<p>written context</p>
-<h2 id="bill-of-materials-example-as-table">Bill of Materials Example (as Table)</h2>
-<p><em>Table ##: An example of one approach to adding your BOM table to this section.</em></p>
+<h1 id="bill-of-materials">Bill of Materials</h1>
+<p><strong>Team 102 – Project Aurora</strong> · Taylor Callo · Member C: Reminder &amp; Alerts (Hub)</p>
+<p>This is the full bill of materials (BOM) for my hub board. It was exported from my KiCad schematic (Tools → Generate BOM, grouped by value) and then filled in with the manufacturer, part number and price for each part. Parts are through-hole wherever possible so the board can be milled at Peralta and hand-soldered. My main subsystem is the <strong>LM386 audio amplifier and speaker</strong> (items 1–2). The real-time clock (items 3–6) is a stretch goal.</p>
+<p>Prices are approximate DigiKey prices in US dollars for buying the quantity shown (1-piece pricing). Part-number links open a DigiKey search for that part.</p>
+<h2 id="bom-table">BOM Table</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;"><strong>Part Name/Description</strong></th>
-<th style="text-align: left;"><strong>Qty</strong></th>
-<th style="text-align: left;"><strong>Unit Cost</strong></th>
-<th style="text-align: left;"><strong>Total Cost</strong></th>
-<th style="text-align: left;"><strong>Manufacture</strong></th>
-<th style="text-align: left;"><strong>Manufacturer #</strong></th>
-<th style="text-align: left;"><strong>Vendor Link</strong></th>
-<th style="text-align: left;"><strong>Datasheet Link</strong></th>
-<th style="text-align: left;"><strong>Schematic Reference Designators</strong></th>
+<th style="text-align: center;">Item</th>
+<th>Reference(s)</th>
+<th style="text-align: center;">Qty</th>
+<th>Description</th>
+<th>Manufacturer</th>
+<th>Part Number</th>
+<th>Package</th>
+<th style="text-align: center;">Unit Price (USD)</th>
+<th style="text-align: center;">Total (USD)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">8-bit SIPO/SISO Shift Register, SOIC-16 package</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">$0.49</td>
-<td style="text-align: left;">$ 0.49</td>
-<td style="text-align: left;">NXP</td>
-<td style="text-align: left;">74HC595D,112</td>
-<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550">DigiKey</a></td>
-<td style="text-align: left;"><a href="https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf">datasheet link</a></td>
-<td style="text-align: left;">U1</td>
+<td style="text-align: center;">1</td>
+<td>U3</td>
+<td style="text-align: center;">1</td>
+<td>Audio amplifier, gain 20 (main subsystem)</td>
+<td>Texas Instruments</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=LM386N-1/NOPB">LM386N-1/NOPB</a></td>
+<td>DIP-8 THT</td>
+<td style="text-align: center;">1.18</td>
+<td style="text-align: center;">1.18</td>
 </tr>
 <tr>
-<td style="text-align: left;">0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">0.2750</td>
-<td style="text-align: left;">$2.75</td>
-<td style="text-align: left;">KEMET</td>
-<td style="text-align: left;">C0805F104K5RACTU</td>
-<td style="text-align: left;">PRLTA 109</td>
-<td style="text-align: left;">n/a</td>
-<td style="text-align: left;">C2, C4, C6, C7, C8, C9, C10, C11, C12, C16</td>
+<td style="text-align: center;">2</td>
+<td>J8 / off-board</td>
+<td style="text-align: center;">1</td>
+<td>Speaker, 8 Ω (plugs into J8)</td>
+<td>Same Sky</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CMS-40558N-L152">CMS-40558N-L152</a></td>
+<td>Off-board</td>
+<td style="text-align: center;">5.88</td>
+<td style="text-align: center;">5.88</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>U4</td>
+<td style="text-align: center;">1</td>
+<td>Real-time clock, I²C (stretch goal)</td>
+<td>Microchip</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=MCP7940N-I/P">MCP7940N-I/P</a></td>
+<td>DIP-8 THT</td>
+<td style="text-align: center;">0.92</td>
+<td style="text-align: center;">0.92</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>Y1</td>
+<td style="text-align: center;">1</td>
+<td>Crystal, 32.768 kHz, 12.5 pF</td>
+<td>Abracon</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=AB26TRB-32.768KHZ-T">AB26TRB-32.768KHZ-T</a></td>
+<td>Cylinder 2x6 mm THT</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">0.35</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>BT1</td>
+<td style="text-align: center;">1</td>
+<td>Coin cell battery, CR2032, 3 V</td>
+<td>Panasonic</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CR2032">CR2032</a></td>
+<td>Coin cell</td>
+<td style="text-align: center;">0.36</td>
+<td style="text-align: center;">0.36</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td>BT1</td>
+<td style="text-align: center;">1</td>
+<td>CR2032 battery holder</td>
+<td>Keystone</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=1066">1066</a></td>
+<td>THT</td>
+<td style="text-align: center;">1.12</td>
+<td style="text-align: center;">1.12</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td>Q1</td>
+<td style="text-align: center;">1</td>
+<td>N-channel MOSFET (alert LED switch)</td>
+<td>Alpha &amp; Omega</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=AO3400A">AO3400A</a></td>
+<td>SOT-23</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">0.52</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td>D7</td>
+<td style="text-align: center;">1</td>
+<td>LED, red, high-brightness, 5 mm</td>
+<td>Kingbright</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=WP7113SEC/J3">WP7113SEC/J3</a></td>
+<td>5 mm THT</td>
+<td style="text-align: center;">0.76</td>
+<td style="text-align: center;">0.76</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td>U1</td>
+<td style="text-align: center;">1</td>
+<td>5 V linear regulator, 1.5 A</td>
+<td>STMicroelectronics</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=L7805CV">L7805CV</a></td>
+<td>TO-220 THT</td>
+<td style="text-align: center;">0.50</td>
+<td style="text-align: center;">0.50</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td>HS1</td>
+<td style="text-align: center;">1</td>
+<td>TO-220 clip-on heatsink</td>
+<td>Aavid (Boyd)</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=577202B00000G">577202B00000G</a></td>
+<td>TO-220</td>
+<td style="text-align: center;">0.70</td>
+<td style="text-align: center;">0.70</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td>J4</td>
+<td style="text-align: center;">1</td>
+<td>DC barrel jack, 2.1 mm</td>
+<td>Same Sky</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=PJ-102AH">PJ-102AH</a></td>
+<td>THT</td>
+<td style="text-align: center;">0.70</td>
+<td style="text-align: center;">0.70</td>
+</tr>
+<tr>
+<td style="text-align: center;">12</td>
+<td>F1</td>
+<td style="text-align: center;">1</td>
+<td>Fuse, 1 A, 250 V, slow-blow, 5x20 mm</td>
+<td>Bel Fuse</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=5ST%201-R">5ST 1-R</a></td>
+<td>5x20 mm</td>
+<td style="text-align: center;">0.40</td>
+<td style="text-align: center;">0.40</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td>F1</td>
+<td style="text-align: center;">2</td>
+<td>Fuse clip, 5x20 mm (holder)</td>
+<td>Keystone</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=3517">3517</a></td>
+<td>THT</td>
+<td style="text-align: center;">0.30</td>
+<td style="text-align: center;">0.60</td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td>D1, D2, D8, D9</td>
+<td style="text-align: center;">4</td>
+<td>Schottky diode, 40 V, 1 A</td>
+<td>onsemi</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=1N5819RLG">1N5819RLG</a></td>
+<td>DO-41 THT</td>
+<td style="text-align: center;">0.40</td>
+<td style="text-align: center;">1.60</td>
+</tr>
+<tr>
+<td style="text-align: center;">15</td>
+<td>U2</td>
+<td style="text-align: center;">1</td>
+<td>PIC18F57Q43 Curiosity Nano dev board (not counted in total)</td>
+<td>Microchip</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=DM164150">DM164150</a></td>
+<td>Dev board</td>
+<td style="text-align: center;">see note</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td style="text-align: center;">16</td>
+<td>C1</td>
+<td style="text-align: center;">1</td>
+<td>Capacitor, 0.33 µF, 50 V, X7R</td>
+<td>KEMET</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=C330C334K5R5TA">C330C334K5R5TA</a></td>
+<td>Radial THT</td>
+<td style="text-align: center;">0.60</td>
+<td style="text-align: center;">0.60</td>
+</tr>
+<tr>
+<td style="text-align: center;">17</td>
+<td>C2, C3, C4, C8, C13, C20, C21</td>
+<td style="text-align: center;">7</td>
+<td>Capacitor, 0.1 µF, 50 V, X7R</td>
+<td>KEMET</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=C320C104K5R5TA">C320C104K5R5TA</a></td>
+<td>Radial THT</td>
+<td style="text-align: center;">0.30</td>
+<td style="text-align: center;">2.10</td>
+</tr>
+<tr>
+<td style="text-align: center;">18</td>
+<td>C5, C6, C7</td>
+<td style="text-align: center;">3</td>
+<td>Capacitor, 1 µF, 50 V, X7R (≥ 16 V needed)</td>
+<td>KEMET</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=C330C105K5R5TA">C330C105K5R5TA</a></td>
+<td>Radial THT</td>
+<td style="text-align: center;">0.55</td>
+<td style="text-align: center;">1.65</td>
+</tr>
+<tr>
+<td style="text-align: center;">19</td>
+<td>C9</td>
+<td style="text-align: center;">1</td>
+<td>Capacitor, 100 µF, 16 V, electrolytic</td>
+<td>Nichicon</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=UVR1C101MED">UVR1C101MED</a></td>
+<td>Radial THT</td>
+<td style="text-align: center;">0.27</td>
+<td style="text-align: center;">0.27</td>
+</tr>
+<tr>
+<td style="text-align: center;">20</td>
+<td>C10</td>
+<td style="text-align: center;">1</td>
+<td>Capacitor, 10 µF, 16 V, electrolytic</td>
+<td>Nichicon</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=UVR1C100MDD">UVR1C100MDD</a></td>
+<td>Radial THT</td>
+<td style="text-align: center;">0.20</td>
+<td style="text-align: center;">0.20</td>
+</tr>
+<tr>
+<td style="text-align: center;">21</td>
+<td>C11</td>
+<td style="text-align: center;">1</td>
+<td>Capacitor, 0.047 µF, 50 V, X7R</td>
+<td>KEMET</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=C320C473K5R5TA">C320C473K5R5TA</a></td>
+<td>Radial THT</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">0.35</td>
+</tr>
+<tr>
+<td style="text-align: center;">22</td>
+<td>C12</td>
+<td style="text-align: center;">1</td>
+<td>Capacitor, 220 µF, 16 V, electrolytic</td>
+<td>Nichicon</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=UVR1C221MED">UVR1C221MED</a></td>
+<td>Radial THT</td>
+<td style="text-align: center;">0.35</td>
+<td style="text-align: center;">0.35</td>
+</tr>
+<tr>
+<td style="text-align: center;">23</td>
+<td>C14, C15</td>
+<td style="text-align: center;">2</td>
+<td>Capacitor, 22 pF, 50 V, C0G</td>
+<td>KEMET</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=C315C220J5G5TA">C315C220J5G5TA</a></td>
+<td>Radial THT</td>
+<td style="text-align: center;">0.30</td>
+<td style="text-align: center;">0.60</td>
+</tr>
+<tr>
+<td style="text-align: center;">24</td>
+<td>R1, R3, R5, R11, R19</td>
+<td style="text-align: center;">5</td>
+<td>Resistor, 10 kΩ, 1/4 W</td>
+<td>Stackpole</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CF14JT10K0">CF14JT10K0</a></td>
+<td>Axial THT</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.50</td>
+</tr>
+<tr>
+<td style="text-align: center;">25</td>
+<td>R2, R4, R6, R12, R20, R21</td>
+<td style="text-align: center;">6</td>
+<td>Resistor, 1 kΩ, 1/4 W</td>
+<td>Stackpole</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CF14JT1K00">CF14JT1K00</a></td>
+<td>Axial THT</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.60</td>
+</tr>
+<tr>
+<td style="text-align: center;">26</td>
+<td>R7, R8, R9, R10</td>
+<td style="text-align: center;">4</td>
+<td>Resistor, 330 Ω, 1/4 W</td>
+<td>Stackpole</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CF14JT330R">CF14JT330R</a></td>
+<td>Axial THT</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.40</td>
+</tr>
+<tr>
+<td style="text-align: center;">27</td>
+<td>R13</td>
+<td style="text-align: center;">1</td>
+<td>Resistor, 10 Ω, 1/4 W</td>
+<td>Stackpole</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CF14JT10R0">CF14JT10R0</a></td>
+<td>Axial THT</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.10</td>
+</tr>
+<tr>
+<td style="text-align: center;">28</td>
+<td>R14</td>
+<td style="text-align: center;">1</td>
+<td>Resistor, 100 Ω, 1/4 W</td>
+<td>Stackpole</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CF14JT100R">CF14JT100R</a></td>
+<td>Axial THT</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.10</td>
+</tr>
+<tr>
+<td style="text-align: center;">29</td>
+<td>R15</td>
+<td style="text-align: center;">1</td>
+<td>Resistor, 100 kΩ, 1/4 W</td>
+<td>Stackpole</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CF14JT100K">CF14JT100K</a></td>
+<td>Axial THT</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.10</td>
+</tr>
+<tr>
+<td style="text-align: center;">30</td>
+<td>R16</td>
+<td style="text-align: center;">1</td>
+<td>Resistor, 150 Ω, 1/4 W</td>
+<td>Stackpole</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CF14JT150R">CF14JT150R</a></td>
+<td>Axial THT</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.10</td>
+</tr>
+<tr>
+<td style="text-align: center;">31</td>
+<td>R17, R18</td>
+<td style="text-align: center;">2</td>
+<td>Resistor, 4.7 kΩ, 1/4 W</td>
+<td>Stackpole</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=CF14JT4K70">CF14JT4K70</a></td>
+<td>Axial THT</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.20</td>
+</tr>
+<tr>
+<td style="text-align: center;">32</td>
+<td>D3</td>
+<td style="text-align: center;">1</td>
+<td>LED, green, 5 mm (Ready)</td>
+<td>Kingbright</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=WP7113GD">WP7113GD</a></td>
+<td>5 mm THT</td>
+<td style="text-align: center;">0.30</td>
+<td style="text-align: center;">0.30</td>
+</tr>
+<tr>
+<td style="text-align: center;">33</td>
+<td>D4</td>
+<td style="text-align: center;">1</td>
+<td>LED, blue, 5 mm (Taken)</td>
+<td>Kingbright</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=WP7113QBC/D">WP7113QBC/D</a></td>
+<td>5 mm THT</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">0.45</td>
+</tr>
+<tr>
+<td style="text-align: center;">34</td>
+<td>D5, D6</td>
+<td style="text-align: center;">2</td>
+<td>LED, red, 5 mm (Error, Debug)</td>
+<td>Kingbright</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=WP7113ID">WP7113ID</a></td>
+<td>5 mm THT</td>
+<td style="text-align: center;">0.30</td>
+<td style="text-align: center;">0.60</td>
+</tr>
+<tr>
+<td style="text-align: center;">35</td>
+<td>SW1, SW2, SW3</td>
+<td style="text-align: center;">3</td>
+<td>Tactile push button, 6 mm (Take Dose, Set/Mode, Debug)</td>
+<td>TE Connectivity</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=1825910-6">1825910-6</a></td>
+<td>THT</td>
+<td style="text-align: center;">0.15</td>
+<td style="text-align: center;">0.45</td>
+</tr>
+<tr>
+<td style="text-align: center;">36</td>
+<td>J1, J2, J3</td>
+<td style="text-align: center;">3</td>
+<td>Shrouded box header, 2x4, 2.54 mm (ribbon cables)</td>
+<td>Würth Elektronik</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=61200821621">61200821621</a></td>
+<td>THT</td>
+<td style="text-align: center;">0.70</td>
+<td style="text-align: center;">2.10</td>
+</tr>
+<tr>
+<td style="text-align: center;">37</td>
+<td>J5, J6, J8, JP1</td>
+<td style="text-align: center;">4</td>
+<td>Pin header, 1x2, 2.54 mm</td>
+<td>Sullins</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=PRPC002SAAN-RC">PRPC002SAAN-RC</a></td>
+<td>THT</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.40</td>
+</tr>
+<tr>
+<td style="text-align: center;">38</td>
+<td>JP1</td>
+<td style="text-align: center;">1</td>
+<td>Jumper shunt, 2.54 mm</td>
+<td>Sullins</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=QPC02SXGN-RC">QPC02SXGN-RC</a></td>
+<td>—</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;">0.10</td>
+</tr>
+<tr>
+<td style="text-align: center;">39</td>
+<td>J7</td>
+<td style="text-align: center;">1</td>
+<td>Pin header, 1x14, 2.54 mm (expansion)</td>
+<td>Sullins</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=PRPC014SAAN-RC">PRPC014SAAN-RC</a></td>
+<td>THT</td>
+<td style="text-align: center;">0.45</td>
+<td style="text-align: center;">0.45</td>
+</tr>
+<tr>
+<td style="text-align: center;">40</td>
+<td>TP1–TP6</td>
+<td style="text-align: center;">6</td>
+<td>Test points (bare PCB pads, no part to buy)</td>
+<td>—</td>
+<td>—</td>
+<td>PCB pad</td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;">0.00</td>
+</tr>
+<tr>
+<td style="text-align: center;">41</td>
+<td>Off-board</td>
+<td style="text-align: center;">1</td>
+<td>Wall adapter, 9 V, 2 A, 5.5x2.1 mm plug</td>
+<td>Triad Magnetics</td>
+<td><a href="https://www.digikey.com/en/products/result?keywords=WSU090-2000">WSU090-2000</a></td>
+<td>Off-board</td>
+<td style="text-align: center;">12.43</td>
+<td style="text-align: center;">12.43</td>
+</tr>
+<tr>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"><strong>80</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>41.09</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.</p>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unique line items</td>
+<td>41</td>
+</tr>
+<tr>
+<td>Total parts</td>
+<td>80 (including 6 test-point pads that need no part)</td>
+</tr>
+<tr>
+<td>Total cost (one board)</td>
+<td><strong>41.09 USD</strong>, not counting the Curiosity Nano</td>
+</tr>
+<tr>
+<td>Main subsystem (amplifier + speaker + support parts)</td>
+<td>about 9.63 USD</td>
+</tr>
+<tr>
+<td>Most expensive item</td>
+<td>Wall adapter (12.43 USD), then the speaker (5.88 USD)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes">Notes</h2>
 <ul>
-<li>You could also import your BOM via a screenshot of the spreadsheet created BOM</li>
+<li>The <strong>speaker</strong> and <strong>wall adapter</strong> are off-board parts. The speaker plugs into J8 and the adapter plugs into J4.</li>
+<li><strong>C5–C7</strong> need at least 16 V. I chose 50 V parts because they cost about the same and are easier to find.</li>
+<li><strong>TP1–TP6</strong> are bare copper pads on the PCB, so there is nothing to buy.</li>
+<li>The <strong>Curiosity Nano</strong> (U2) is a development board that plugs into headers, so it is listed but not counted in the board's part total.</li>
+<li>The KiCad BOM export is saved in this folder as a spreadsheet: <a href="../TC_Hub_BOM.csv">TC_Hub_BOM.csv</a>.</li>
 </ul>
-<h2 id="bill-of-materials-example-as-image">Bill of Materials Example (as Image)</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BOM-Screenshot.png" data-desc-position="bottom"><img _2000_="&quot;2000&quot;" alt="" src="../BOM-Screenshot.png" style="style" width:="width:"></a>
-<strong>Figure 2:</strong> Example Bill of Materials as a screenshot.</p>
-<p>As you can see, the text can be difficult to read without opening the image.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
