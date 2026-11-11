@@ -6,8 +6,8 @@ This schematic is for my Reminder & Alerts hub board (Team 102, Project Aurora).
 
 [![Hub subsystem schematic](TC_Hub_Schematic.png)](TC_Hub_Schematic.png)
 
-**Figure 1:** Subsystem schematic for the Reminder & Alerts hub board. Click the image to enlarge it.
+**Figure 1:** Updated subsystem schematic for the Reminder & Alerts hub board. Click the image to enlarge it.
 
 ## Resources
 
-The schematic as a PDF download is available [here](TC_Hub_Schematic.pdf), and the Zip folder of the project [here](TC_Hub_Schematic.zip).
+The updated schematic is available as a PDF [here](TC_Hub_Schematic.pdf). The current KiCad project files are on the [PCB Design](../06-PCB-Design/PCB-Design.md) page.
